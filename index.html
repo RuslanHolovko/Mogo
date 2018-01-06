@@ -1,0 +1,1113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="cleartype" content="on">
+	<meta name="MobileOptimized" content="320">
+	<meta name="theme-color" content="#e98183">
+	<meta name="HandheldFriendly" content="True">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+	<title>MoGo</title>
+</head>
+
+<body>
+	<style>
+		.preloader{
+			position: fixed;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background-position: center center;
+			background-repeat: no-repeat;
+			background-color: #fff;
+			z-index: 1000;
+		}
+		.cssload-container *{ margin: 0; padding: 0; box-sizing: border-box; -o-box-sizing: border-box; -ms-box-sizing: border-box;
+		-webkit-box-sizing: border-box; -moz-box-sizing: border-box; } .cssload-container{ position: absolute; left: 50%; top:50%; transform:
+		translate(-50%,-50%); -o-transform: translate(-50%,-50%); -ms-transform: translate(-50%,-50%); -webkit-transform: translate(-50%,-50%);
+		-moz-transform: translate(-50%,-50%); } .cssload-bouncywrap{ position: relative; } .cssload-cssload-dotcon{ display: block;
+		float: left; width: 119px; position: absolute; } .cssload-dc1{ animation: bouncy1 1.73s infinite; -o-animation: bouncy1 1.73s
+		infinite; -ms-animation: bouncy1 1.73s infinite; -webkit-animation: bouncy1 1.73s infinite; -moz-animation: bouncy1 1.73s
+		infinite; left: -95px; } .dc2{ animation: bouncy2 1.73s infinite; -o-animation: bouncy2 1.73s infinite; -ms-animation: bouncy2
+		1.73s infinite; -webkit-animation: bouncy2 1.73s infinite; -moz-animation: bouncy2 1.73s infinite; left: 0; } .dc3{ animation:
+		bouncy3 1.73s infinite; -o-animation: bouncy3 1.73s infinite; -ms-animation: bouncy3 1.73s infinite; -webkit-animation: bouncy3
+		1.73s infinite; -moz-animation: bouncy3 1.73s infinite; left: 95px; } .cssload-dot{ height: 24px; width: 24px; border-radius:
+		50%; background: #95e1d3; } @keyframes bouncy1{ 0% {transform: translate(0px,0px) rotate(0deg);} 50% {transform:
+		translate(0px,0px) rotate(180deg);} 100% {transform: translate(95px,0px) rotate(-180deg);} } @-o-keyframes bouncy1{ 0% {-o-transform:
+		translate(0px,0px) rotate(0deg);} 50% {-o-transform: translate(0px,0px) rotate(180deg);} 100% {-o-transform: translate(95px,0px)
+		rotate(-180deg);} } @-ms-keyframes bouncy1{ 0% {-ms-transform: translate(0px,0px) rotate(0deg);} 50% {-ms-transform: translate(0px,0px)
+		rotate(180deg);} 100% {-ms-transform: translate(95px,0px) rotate(-180deg);} } @-webkit-keyframes bouncy1{ 0% {-webkit-transform:
+		translate(0px,0px) rotate(0deg);} 50% {-webkit-transform: translate(0px,0px) rotate(180deg);} 100% {-webkit-transform: translate(95px,0px)
+		rotate(-180deg);} } @-moz-keyframes bouncy1{ 0% {-moz-transform: translate(0px,0px) rotate(0deg);} 50% {-moz-transform: translate(0px,0px)
+		rotate(180deg);} 100% {-moz-transform: translate(95px,0px) rotate(-180deg);} } @keyframes bouncy2{ 0% {transform: translateX(0px);}
+		50% {transform: translateX(-95px);} 100% {transform: translateX(-95px);} } @-o-keyframes bouncy2{ 0% {-o-transform: translateX(0px);}
+		50% {-o-transform: translateX(-95px);} 100% {-o-transform: translateX(-95px);} } @-ms-keyframes bouncy2{ 0% {-ms-transform:
+		translateX(0px);} 50% {-ms-transform: translateX(-95px);} 100% {-ms-transform: translateX(-95px);} } @-webkit-keyframes bouncy2{
+		0% {-webkit-transform: translateX(0px);} 50% {-webkit-transform: translateX(-95px);} 100% {-webkit-transform: translateX(-95px);}
+		} @-moz-keyframes bouncy2{ 0% {-moz-transform: translateX(0px);} 50% {-moz-transform: translateX(-95px);} 100% {-moz-transform:
+		translateX(-95px);} } @keyframes bouncy3{ 0% {transform: translateX(0px);} 50% {transform: translateX(0px);} 100% {transform:
+		translateX(-95px);} } @-o-keyframes bouncy3{ 0% {-o-transform: translateX(0px);} 50% {-o-transform: translateX(0px);} 100%
+		{-o-transform: translateX(-95px);} } @-ms-keyframes bouncy3{ 0% {-ms-transform: translateX(0px);} 50% {-ms-transform: translateX(0px);}
+		100% {-ms-transform: translateX(-95px);} } @-webkit-keyframes bouncy3{ 0% {-webkit-transform: translateX(0px);} 50% {-webkit-transform:
+		translateX(0px);} 100% {-webkit-transform: translateX(-95px);} } @-moz-keyframes bouncy3{ 0% {-moz-transform: translateX(0px);}
+		50% {-moz-transform: translateX(0px);} 100% {-moz-transform: translateX(-95px);} }
+	</style>
+	<div class="preloader">
+		<div class="preloder-el"></div>
+			<div class="cssload-container">
+			<div class="cssload-bouncywrap">
+				<div class="cssload-cssload-dotcon cssload-dc1">
+					<div class="cssload-dot"></div>
+				</div>
+				<div class="cssload-cssload-dotcon dc2">
+					<div class="cssload-dot"></div>
+				</div>
+				<div class="cssload-cssload-dotcon dc3">
+					<div class="cssload-dot"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="fixed-top-line">
+		<button class="fixed-top-line-button">
+			<span class="line"></span>
+			<span class="line"></span>
+			<span class="line"></span>
+		</button>
+		<a href="#" class="fixed-top-line-logo">MoGo</a>
+	</div>
+
+	<div class="page nano">
+			<header id="home" class="header" style="background-image: linear-gradient(360deg, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%), url(img/bg-header.jpg)">
+				<div class="container">
+					<div class="header-block">
+						<sup class="header-sup sup wow flipInY" data-wow-duration="1s" data-wow-delay="1s" >Creative Template</sup>
+						<h1 class="h1 wow flipInX" data-wow-duration="1.2s" data-wow-delay="1s">WELCOME <br> TO MOGO</h1>
+						<div class="header-line wow fadeInUp" data-wow-duration="1.2s" data-wow-delay="1s"></div>
+						<button class="header-button wow fadeInDown" data-wow-duration="1.2s" data-wow-delay="1s">LEARN MORE</button>
+						<div class="bottom-block">
+							<ul class="bottom-block-list">
+								<li class="bottom-block-list__item wow zoomIn" data-wow-duration="1.5s" data-wow-delay=".6s"><span>01</span> INTRO</li>
+								<li class="bottom-block-list__item wow zoomIn" data-wow-duration="1.5s" data-wow-delay=".7s"><span>02</span> WORK</li>
+								<li class="bottom-block-list__item wow zoomIn" data-wow-duration="1.5s" data-wow-delay=".8s"><span>03</span> ABOUT</li>
+								<li class="bottom-block-list__item wow zoomIn" data-wow-duration="1.5s" data-wow-delay=".9s"><span>04</span> CONTACTS</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</header>
+			<section id="about" class="section about">
+				<div class="container">
+					<sup class="sup sup-about wow flipInY" data-wow-duration=".7s">What we do</sup>
+					<h2 class="h2 wow flipInX" data-wow-duration=".8s">STORY ABOUT US</h2>
+					<div class="section-line"></div>
+					<p class="section-descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat ex ducimus molestiae consectetur facere ipsa minus accusamus, dolore aspernatur deleniti nulla alias necessitatibus fugiat nesciunt at saepe, illum illo perspiciatis.</p>
+					<div class="about-inner">
+						<div class="about-inner__item wow zoomIn" data-wow-duration=".8s"><img src="img/apple.jpg" alt="img">
+							<div class="about-inner__descr">
+								<i>
+									<svg xmlns="http://www.w3.org/2000/svg" width="31.938" height="22.53" viewBox="0 0 31.938 22.53" fill="#fff">
+										<defs>
+											<style>
+											.cls-1 {
+												fill: #fff;
+												fill-rule: evenodd;
+											}
+										</style>
+									</defs>
+									<path id="USERS" fill="fff" d="M555.95,1505.5v0.01a1,1,0,0,1-1,.99h-7.412a1.248,1.248,0,0,0,.972-1.21h0s0-4.5-3.3-6.14a5.822,5.822,0,0,0-2.206-.73l0.02-1.95a3.672,3.672,0,0,1-1.011-2.43c-0.482.13-.641-0.57-0.67-1.02-0.026-.43-0.279-1.78.31-1.66a11.832,11.832,0,0,1-.165-2.14,3.885,3.885,0,0,1,3.861-3.21c2.649,0.11,3.7,1.69,3.845,3.2a11.926,11.926,0,0,1-.172,2.15c0.589-.12.333,1.23,0.3,1.66-0.025.45-.188,1.15-0.669,1.01a3.675,3.675,0,0,1-1.012,2.43l0.018,1.94s0.488,0.28,2.546,1.13,1.412,0.22,3.088,1.05c2.649,1.31,2.649,4.92,2.649,4.92h0Zm-14.927-6.66c2.262,0.94,1.552.24,3.395,1.15,2.912,1.44,2.912,5.42,2.912,5.42h0a1.093,1.093,0,0,1-1.093,1.09H525.093a1.093,1.093,0,0,1-1.093-1.09h0s0-3.98,2.912-5.42c1.843-.91,1.133-0.17,3.4-1.11a25.01,25.01,0,0,0,2.8-1.26l0.021-2.15a4.04,4.04,0,0,1-1.11-2.67c-0.53.15-.705-0.62-0.736-1.11s-0.307-1.96.339-1.83a13.029,13.029,0,0,1-.18-2.36,4.272,4.272,0,0,1,4.244-3.52c2.911,0.12,4.065,1.86,4.226,3.52a13.189,13.189,0,0,1-.189,2.36c0.647-.13.366,1.35,0.334,1.82-0.028.5-.207,1.27-0.736,1.11a4,4,0,0,1-1.111,2.67l0.019,2.14A30.239,30.239,0,0,0,541.023,1498.84Z" transform="translate(-524 -1483.97)"/>
+								</svg>
+							</i>
+							<span>SUPER TEAM</span>
+						</div>
+						</div>
+						<div class="about-inner__item wow zoomIn" data-wow-duration=".9s"><img src="img/headphones.jpg" alt="img"></div>
+						<div class="about-inner__item wow zoomIn" data-wow-duration="1s"><img src="img/laptop.jpg" alt="img"></div>
+					</div>
+				</div>
+			</section>
+			<section class="counter">
+				<div class="container">
+					<div class="counter-wrapper">
+						<div class="counter-item"><span class="counter-item__number wow bounceInLeft" data-wow-duration="1s" data-wow-delay=".2s">42</span><span class="counter-item__descr">web design projects</span></div>
+						<div class="counter-item"><span class="counter-item__number wow bounceInLeft" data-wow-duration="1s" data-wow-delay=".3s">123</span><span class="counter-item__descr">happy client</span></div>
+						<div class="counter-item"><span class="counter-item__number wow bounceInDown" data-wow-duration="1s" data-wow-delay=".4s">15</span><span class="counter-item__descr">award winner</span></div>
+						<div class="counter-item"><span class="counter-item__number wow bounceInRight" data-wow-duration="1s" data-wow-delay=".3s">99</span><span class="counter-item__descr">cup of coffe</span></div>
+						<div class="counter-item"><span class="counter-item__number wow bounceInRight" data-wow-duration="1s" data-wow-delay=".2s">24</span><span class="counter-item__descr">members</span></div>
+					</div>	
+				</div>
+			</section>
+
+			
+			<section id="services" class="section services">
+				<div class="container">
+					<sup class="sup">We work with</sup>
+					<h2 class="h2">AMAZING SERVICES</h2>
+					<div class="section-line"></div>
+					<div class="services-block">
+						<ul class="services-list">
+							<li class="services-list__item wow bounceInLeft" data-wow-duration="1s">
+								<i>
+									<svg xmlns="http://www.w3.org/2000/svg" width="32" height="30.5" viewBox="0 0 32 30.5">
+										<defs>
+											<style>
+											.cls-1 {
+												fill: #95e1d3;
+												fill-rule: evenodd;
+											}
+										</style>
+									</defs>
+									<path id="ALARM" class="cls-1" d="M420.74,2319.5a15.727,15.727,0,0,0-8.243-8.24A5.868,5.868,0,0,1,420.74,2319.5Zm-0.24,6.5a14.442,14.442,0,0,1-3.963,9.94l2.029,2.03a1.482,1.482,0,0,1-1.049,2.53,1.51,1.51,0,0,1-1.049-.43l-2.178-2.18a14.471,14.471,0,0,1-16.566.01l-2.163,2.16a1.5,1.5,0,1,1-2.122-2.12l2.012-2.01A14.495,14.495,0,1,1,420.5,2326ZM406,2314.5a11.5,11.5,0,1,0,11.5,11.5A11.5,11.5,0,0,0,406,2314.5Zm6,13h-6a1.5,1.5,0,0,1-1.5-1.5v-8a1.5,1.5,0,0,1,3,0v6.5H412A1.5,1.5,0,0,1,412,2327.5Zm-20.713-7.79a5.994,5.994,0,0,1,8.419-8.42A16.016,16.016,0,0,0,391.287,2319.71Z" transform="translate(-390 -2310)"/>
+								</svg>
+							</i>
+								<div>
+									<h3 class="h3">PHOTOGRAPHY</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, ipsum.</p>
+								</div>
+							</li>
+							<li class="services-list__item wow bounceInLeft" data-wow-duration="1s">
+								<i>
+									<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+										<defs>
+											<style>
+											.cls-1 {
+												fill: #95e1d3;
+												fill-rule: evenodd;
+											}
+										</style>
+									</defs>
+									<path id="LINE_GRAPH" data-name="LINE GRAPH" class="cls-1" d="M821.5,2341h-29a1.5,1.5,0,0,1-1.5-1.5v-29a1.5,1.5,0,0,1,1.5-1.5h29a1.5,1.5,0,0,1,1.5,1.5v29A1.5,1.5,0,0,1,821.5,2341Zm-1.5-29H794v26h26v-26Zm-23.785,13.24h0l4-2.5h0a1.524,1.524,0,0,1,1.625.03h0.006l6.631,4.42,7.638-5.4a1.5,1.5,0,1,1,1.763,2.43h0l-8.5,6h0a1.486,1.486,0,0,1-.878.29,1.505,1.505,0,0,1-.861-0.28l-6.657-4.43-3.135,1.96a1.533,1.533,0,0,1-.847.26A1.5,1.5,0,0,1,796.215,2325.24Z" transform="translate(-791 -2309)"/>
+								</svg>
+							</i>
+								<div>
+									<h3 class="h3">WEB DESIGN</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, ducimus!</p>
+								</div>
+							</li>
+							<li class="services-list__item wow bounceInLeft" data-wow-duration="1s">
+								<i>
+									<svg xmlns="http://www.w3.org/2000/svg" width="31" height="28" viewBox="0 0 31 28">
+										<defs>
+											<style>
+											.cls-1 {
+												fill: #95e1d3;
+												fill-rule: evenodd;
+											}
+										</style>
+									</defs>
+									<path id="COMPUTER_OK" data-name="COMPUTER / OK" class="cls-1" d="M1220,2333h-9.5v2.5l2,2v0.5h-13v-0.5l2-2V2333H1192a1.5,1.5,0,0,1-1.5-1.5v-20a1.5,1.5,0,0,1,1.5-1.5h28a1.5,1.5,0,0,1,1.5,1.5v20A1.5,1.5,0,0,1,1220,2333Zm-0.5-21h-27v17h27v-17Zm-16.5,7a1.505,1.505,0,0,1,1.06.44h0l0.94,0.94,2.94-2.94h0a1.5,1.5,0,1,1,2.12,2.12h0l-4,4h0a1.5,1.5,0,0,1-2.12,0h0l-2-2h0A1.5,1.5,0,0,1,1203,2319Z" transform="translate(-1190.5 -2310)"/>
+								</svg>
+							</i>
+								<div>
+									<h3 class="h3">CREATIVITY</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, magnam?</p>
+								</div>
+							</li>
+						</ul>
+						<div class="services-line"></div>
+						<ul class="services-list">
+							<li class="services-list__item services-list__item--margin wow bounceInRight" data-wow-duration="1s">
+								<i>
+									<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+										<defs>
+											<style>
+											.cls-1 {
+												fill: #95e1d3;
+												fill-rule: evenodd;
+											}
+										</style>
+									</defs>
+									<path id="BOOK_2" data-name="BOOK 2" class="cls-1" d="M422.065,2504.89l-14.471,5.99a1.53,1.53,0,0,1-1.188,0l-14.471-5.99a1.5,1.5,0,0,1-.935-1.39v-23a1.5,1.5,0,0,1,1.5-1.5,1.55,1.55,0,0,1,.573.11h0l0,0.01h0.013L407,2484.88l13.911-5.76h0.013l0-.01h0a1.55,1.55,0,0,1,.573-0.11,1.5,1.5,0,0,1,1.5,1.5v23A1.5,1.5,0,0,1,422.065,2504.89ZM405.5,2487.5l-11.5-4.76v19.76l11.5,4.76V2487.5Zm14.5-4.76-11.5,4.76v19.76l11.5-4.76v-19.76Zm-9.121,6.89,5.5-2.5h0A1.593,1.593,0,0,1,417,2487a1.5,1.5,0,0,1,.621,2.87h0l-5.5,2.5h0a1.6,1.6,0,0,1-.621.13A1.5,1.5,0,0,1,410.879,2489.63Zm0,5.5h0l5.5-2.5h0a1.593,1.593,0,0,1,.621-0.13,1.5,1.5,0,0,1,.621,2.87l-5.5,2.5v-0.01a1.445,1.445,0,0,1-.621.14A1.5,1.5,0,0,1,410.879,2495.13Zm0,5.5h0l5.5-2.5h0A1.593,1.593,0,0,1,417,2498a1.5,1.5,0,0,1,.621,2.87h0l-5.5,2.5h0a1.6,1.6,0,0,1-.621.13A1.5,1.5,0,0,1,410.879,2500.63ZM397,2487a1.6,1.6,0,0,1,.621.13h0l5.5,2.5h0a1.5,1.5,0,0,1-.621,2.87,1.593,1.593,0,0,1-.621-0.13h0l-5.5-2.5h0A1.5,1.5,0,0,1,397,2487Zm0,5.5a1.6,1.6,0,0,1,.621.13h0l5.5,2.5h0a1.5,1.5,0,0,1-.621,2.87,1.439,1.439,0,0,1-.621-0.14v0.01l-5.5-2.5h0A1.5,1.5,0,0,1,397,2492.5Zm0,5.5a1.6,1.6,0,0,1,.621.13h0l5.5,2.5h0a1.5,1.5,0,0,1-.621,2.87,1.593,1.593,0,0,1-.621-0.13h0l-5.5-2.5h0A1.5,1.5,0,0,1,397,2498Z" transform="translate(-391 -2479)"/>
+								</svg>
+							</i>
+								<div>
+									<h3 class="h3">SEO</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi, ipsum.</p>
+								</div>
+							</li>
+							<li class="services-list__item wow bounceInRight" data-wow-duration="1s">
+								<i>
+									<svg xmlns="http://www.w3.org/2000/svg" width="32" height="30.5" viewBox="0 0 32 30.5">
+										<defs>
+											<style>
+											.cls-1 {
+												fill: #95e1d3;
+												fill-rule: evenodd;
+											}
+										</style>
+									</defs>
+									<path id="HOME" class="cls-1" d="M822,2495.5a1.493,1.493,0,0,1-2.52,1.09l0,0.01-13.439-13.44h0l-0.038-.04h0l-13.446,13.45h0a1.525,1.525,0,0,1-1.053.43,1.5,1.5,0,0,1-1.5-1.5,1.479,1.479,0,0,1,.461-1.08l14.458-14.46a1.51,1.51,0,0,1,1.081-.46h0.092c0.023,0,.045.01,0.068,0.01h0a1.479,1.479,0,0,1,.933.47h0l5.9,5.9v-1.38a1.5,1.5,0,0,1,3,0v4.38l5.6,5.6h0A1.485,1.485,0,0,1,822,2495.5Zm-3,2.5v10.5a1.5,1.5,0,0,1-1.5,1.5h-3v-12h-6v12h-14a1.5,1.5,0,0,1-1.5-1.5V2498l13-13Zm-15.5,0h-6v6h6v-6Z" transform="translate(-790 -2479.5)"/>
+								</svg>
+							</i>
+							<div>
+								<h3 class="h3">CSS/HTML</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, ducimus!</p>
+							</div>
+							</li>
+							<li class="services-list__item wow bounceInRight" data-wow-duration="1s">
+								<i>
+									<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+										<defs>
+											<style>
+											.cls-1 {
+												fill: #95e1d3;
+												fill-rule: evenodd;
+											}
+										</style>
+									</defs>
+									<path id="IMAGE" class="cls-1" d="M1220.5,2511h-29a1.5,1.5,0,0,1-1.5-1.5v-29a1.5,1.5,0,0,1,1.5-1.5h29a1.5,1.5,0,0,1,1.5,1.5v29A1.5,1.5,0,0,1,1220.5,2511Zm-1.5-29h-26v26h26v-26Zm-22.5,1.5h5.5a1.5,1.5,0,0,1,0,3h-4.5v4.5h0a1.5,1.5,0,0,1-3,0h0v-5.5h0v-2h2Zm-2,15.5h0a1.5,1.5,0,0,1,3,0h0v4.5h4.5a1.5,1.5,0,0,1,0,3h-7.5v-2h0V2499Zm15.5-15.5h7.5v2h0v5.5h0a1.5,1.5,0,0,1-3,0h0v-4.5H1210A1.5,1.5,0,0,1,1210,2483.5Zm0,20h4.5V2499h0a1.5,1.5,0,0,1,3,0h0v5.5h0v2H1210A1.5,1.5,0,0,1,1210,2503.5Z" transform="translate(-1190 -2479)"/>
+								</svg>
+							</i>
+								<div>
+									<h3 class="h3">DIGITAL</h3>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid, magnam?</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</section>
+
+			<section class="section unique"  style="background-image: linear-gradient(360deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 100%), url(img/unique.jpg)">
+				<div class="container">
+					<sup class="sup">For all devices</sup>
+					<h2 class="h2">UNIQUE DESIGN</h3>
+						<div class="section-line"></div>
+							<div class="unique-block wow bounceInLeft"  data-wow-duration=".7s" data-wow-delay=".4s">
+								<img src="img/ipad+iphone-croop-2.png" alt="img">
+							</div>
+					</div>
+					<div class="unique-white-line"></div>
+				</section>
+
+				<section class="section work">
+					<div class="container">
+						<sup class="sup">Service</sup>
+						<h2 class="h2">WHAT WE DO</h2>
+						<div class="section-line"></div>
+						<p class="section-descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt nesciunt harum quia cum molestias ratione sint nisi quis repellat explicabo.</p>
+
+						<div class="work-block">
+							<div class="work-block__img wow bounceInLeft" data-wow-duration="1s" data-wow-delay=".5s"><img src="img/photo.jpg" alt="img"></div>
+							<div class="work-accordion accordion">
+								<div>
+									<div class="work-accordion-tab wow bounceInRight" data-wow-duration="1s" data-wow-delay=".3s">
+										<i class="arrow-down">
+											<svg xmlns="http://www.w3.org/2000/svg" width="21" height="12" viewBox="0 0 21 12">
+												<defs>
+													<style>
+													.cls-1 {
+														fill: #ccc;
+														fill-rule: evenodd;
+													}
+												</style>
+											</defs>
+											<path id="ARROW_DOWN" data-name="ARROW / DOWN" class="cls-1" d="M1521.14,4194.52l7.86,7.86,7.96-7.96h0a1.5,1.5,0,0,1,2.12,2.12h0l-9,9h0a1.511,1.511,0,0,1-1.08.46h-0.01a1.528,1.528,0,0,1-1.08-.46h0l-9-9h0.01A1.5,1.5,0,1,1,1521.14,4194.52Z" transform="translate(-1518.5 -4194)"/>
+										</svg>
+										</i>
+										<i>
+											<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+												<defs>
+													<style>
+													.cls-1 {
+														fill: #95e1d3;
+														fill-rule: evenodd;
+													}
+												</style>
+											</defs>
+											<path id="PICTURE" class="cls-1" d="M1006,3959a1.505,1.505,0,0,1-1,1.41v1.68a1.5,1.5,0,1,1-1.91,1.91h-1.68a1.493,1.493,0,0,1-2.818,0h-1.684a1.491,1.491,0,0,1-2.816,0h-1.684a1.491,1.491,0,0,1-2.816,0h-1.684a1.491,1.491,0,0,1-2.816,0h-1.684a1.491,1.491,0,0,1-2.816,0h-1.684a1.5,1.5,0,1,1-1.908-1.91v-1.68a1.494,1.494,0,0,1,0-2.82v-1.68a1.494,1.494,0,0,1,0-2.82v-1.68a1.494,1.494,0,0,1,0-2.82v-1.68a1.494,1.494,0,0,1,0-2.82v-1.68a1.494,1.494,0,0,1,0-2.82v-1.68a1.5,1.5,0,1,1,1.908-1.91h1.684a1.491,1.491,0,0,1,2.816,0h1.684a1.491,1.491,0,0,1,2.816,0h1.684a1.491,1.491,0,0,1,2.816,0h1.684a1.491,1.491,0,0,1,2.816,0h1.684a1.493,1.493,0,0,1,2.818,0h1.68a1.5,1.5,0,1,1,1.91,1.91v1.68a1.494,1.494,0,0,1,0,2.82v1.68a1.494,1.494,0,0,1,0,2.82v1.68a1.494,1.494,0,0,1,0,2.82v1.68a1.494,1.494,0,0,1,0,2.82v1.68A1.505,1.505,0,0,1,1006,3959Zm-4-20H980v22h22v-22Zm-13,16,7-8.5,4.5,7v6h-19l6-6Zm-3-7a3,3,0,1,1,3-3A3,3,0,0,1,986,3948Z" transform="translate(-976 -3935)"/>
+										</svg>
+										</i>
+										<h3 class="h3">PHOTOGRAPHY</h3>
+									</div>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis nobis rem quasi, fuga, quis omnis illum quas magni distinctio.
+									Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis nobis rem quasi, fuga, quis omnis illum quas magni distinctio.
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta reiciendis nobis rem quasi, fuga, quis omnis illum quas magni distinctio</p>
+								</div>
+								<div class="work-accordion-wrap ">
+									<div class="work-accordion-tab wow bounceInRight" data-wow-duration="1.2s" data-wow-delay=".6s">
+										<i class="arrow-down">
+											<svg xmlns="http://www.w3.org/2000/svg" width="21" height="12" viewBox="0 0 21 12">
+												<defs>
+													<style>
+													.cls-1 {
+														fill: #ccc;
+														fill-rule: evenodd;
+													}
+												</style>
+											</defs>
+											<path id="ARROW_DOWN" data-name="ARROW / DOWN" class="cls-1" d="M1521.14,4194.52l7.86,7.86,7.96-7.96h0a1.5,1.5,0,0,1,2.12,2.12h0l-9,9h0a1.511,1.511,0,0,1-1.08.46h-0.01a1.528,1.528,0,0,1-1.08-.46h0l-9-9h0.01A1.5,1.5,0,1,1,1521.14,4194.52Z" transform="translate(-1518.5 -4194)"/>
+										</svg>
+										</i>
+										<i>
+											<svg xmlns="http://www.w3.org/2000/svg" width="28" height="32" viewBox="0 0 28 32">
+												<defs>
+													<style>
+													.cls-1 {
+														fill: #95e1d3;
+														fill-rule: evenodd;
+													}
+												</style>
+											</defs>
+											<path id="EQUALIZER" class="cls-1" d="M1002.5,4200.5h-3a1.5,1.5,0,0,1-1.5-1.5v-6a1.5,1.5,0,0,1,1.5-1.5h3a1.5,1.5,0,0,1,1.5,1.5v6A1.5,1.5,0,0,1,1002.5,4200.5Zm-3-15a1.5,1.5,0,0,1,3,0v4.5h-3v-4.5Zm-8,23h-3a1.5,1.5,0,0,1-1.5-1.5v-6a1.5,1.5,0,0,1,1.5-1.5h3a1.5,1.5,0,0,1,1.5,1.5v6A1.5,1.5,0,0,1,991.5,4208.5Zm-3-23a1.5,1.5,0,0,1,3,0V4198h-3v-12.5Zm-8,19h-3a1.5,1.5,0,0,1-1.5-1.5v-6a1.5,1.5,0,0,1,1.5-1.5h3a1.5,1.5,0,0,1,1.5,1.5v6A1.5,1.5,0,0,1,980.5,4204.5Zm-3-19a1.5,1.5,0,0,1,3,0v8.5h-3v-8.5Zm3,29a1.5,1.5,0,0,1-3,0V4206h3v8.5Zm11,0a1.5,1.5,0,0,1-3,0V4210h3v4.5Zm11,0a1.5,1.5,0,0,1-3,0V4202h3v12.5Z" transform="translate(-976 -4184)"/>
+										</svg>
+									</i>
+									<h3 class="h3">CREATIVITY</h3>
+									</div>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit dolorem sapiente labore ex dolores laboriosam molestias laudantium, iure neque, iusto.</p>
+								</div>
+								<div class="work-accordion-wrap">
+									<div class="work-accordion-tab wow bounceInRight" data-wow-duration="1.4s" data-wow-delay=".9s">
+										<i class="arrow-down">
+											<svg xmlns="http://www.w3.org/2000/svg" width="21" height="12" viewBox="0 0 21 12">
+												<defs>
+													<style>
+													.cls-1 {
+														fill: #ccc;
+														fill-rule: evenodd;
+													}
+												</style>
+											</defs>
+											<path id="ARROW_DOWN" data-name="ARROW / DOWN" class="cls-1" d="M1521.14,4194.52l7.86,7.86,7.96-7.96h0a1.5,1.5,0,0,1,2.12,2.12h0l-9,9h0a1.511,1.511,0,0,1-1.08.46h-0.01a1.528,1.528,0,0,1-1.08-.46h0l-9-9h0.01A1.5,1.5,0,1,1,1521.14,4194.52Z" transform="translate(-1518.5 -4194)"/>
+										</svg>
+										</i>
+										<i>
+											<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+												<defs>
+													<style>
+													.cls-1 {
+														fill: #95e1d3;
+														fill-rule: evenodd;
+													}
+												</style>
+											</defs>
+											<path id="BULLSEYE" class="cls-1" d="M991,4286a16,16,0,1,1,16-16A16,16,0,0,1,991,4286Zm0-29a13,13,0,1,0,13,13A13,13,0,0,0,991,4257Zm0,22.5a9.5,9.5,0,1,1,9.5-9.5A9.5,9.5,0,0,1,991,4279.5Zm0-16a6.5,6.5,0,1,0,6.5,6.5A6.5,6.5,0,0,0,991,4263.5Zm0,9.5a3,3,0,1,1,3-3A3,3,0,0,1,991,4273Z" transform="translate(-975 -4254)"/>
+										</svg>
+									</i>
+									<h3 class="h3">WEB DESIGN</h3>
+								</div>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus inventore commodi odio ipsa quibusdam atque ex qui cum ut doloremque!</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+					<section class="section reviews">
+						<div class="container">
+							<div class="owl-carousel reviews-carousel wow fadeInLeft" data-slideout-ignore data-wow-duration=".6s" data-wow-delay=".4s">
+								<div class="reviews-carousel__item">
+									<i class="reviews-carousel__icon">
+										<svg xmlns="http://www.w3.org/2000/svg" width="63" height="61" viewBox="0 0 63 61">
+											<defs>
+												<style>
+												.cls-1 {
+													fill: #95e1d3;
+													fill-rule: evenodd;
+												}
+											</style>
+										</defs>
+										<path id="SPEECH_4" data-name="SPEECH 4" class="cls-1" d="M574,4571h-2v5h0a2.979,2.979,0,0,1-.061.6,2.9,2.9,0,0,1-.122.4c-0.02.05-.03,0.11-0.053,0.17a2.746,2.746,0,0,1-.176.32c-0.035.06-.061,0.13-0.1,0.19a3.65,3.65,0,0,1-.334.4c-0.012.01-.02,0.03-0.033,0.04a3,3,0,0,1-2.084.87c-0.012,0-.024.01-0.037,0.01h0a3,3,0,0,1-2.121-.88l-7.122-7.12H532a3,3,0,0,1-3-3v-30a3,3,0,0,1,3-3h42a3,3,0,0,1,3,3v30A3,3,0,0,1,574,4571Zm-15.485,3,6.326,6.32h0.008A6,6,0,0,0,569,4582v2a3,3,0,0,1-3,3H534.243l-8.122,8.12A3,3,0,0,1,524,4596h0c-0.013,0-.024-0.01-0.037-0.01a3,3,0,0,1-2.084-.87c-0.013-.01-0.021-0.03-0.033-0.04a2.99,2.99,0,0,1-.334-0.41,1.69,1.69,0,0,1-.1-0.18,3.64,3.64,0,0,1-.177-0.32c-0.023-.06-0.033-0.12-0.053-0.17a2.627,2.627,0,0,1-.183-1h0v-6h-4a3,3,0,0,1-3-3v-34h0a3,3,0,0,1,3-3h9v21a6,6,0,0,0,6,6h26.515Z" transform="translate(-514 -4535)"/>
+									</svg>
+									</i>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, reprehenderit!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, reprehenderit!</p>
+									<span class="reviews-carousel__name">Jon Doe</span>
+								</div>
+								<div class="reviews-carousel__item">
+									<i class="reviews-carousel__icon">
+										<svg xmlns="http://www.w3.org/2000/svg" width="63" height="61" viewBox="0 0 63 61">
+											<defs>
+												<style>
+												.cls-1 {
+													fill: #95e1d3;
+													fill-rule: evenodd;
+												}
+											</style>
+										</defs>
+										<path id="SPEECH_4" data-name="SPEECH 4" class="cls-1" d="M574,4571h-2v5h0a2.979,2.979,0,0,1-.061.6,2.9,2.9,0,0,1-.122.4c-0.02.05-.03,0.11-0.053,0.17a2.746,2.746,0,0,1-.176.32c-0.035.06-.061,0.13-0.1,0.19a3.65,3.65,0,0,1-.334.4c-0.012.01-.02,0.03-0.033,0.04a3,3,0,0,1-2.084.87c-0.012,0-.024.01-0.037,0.01h0a3,3,0,0,1-2.121-.88l-7.122-7.12H532a3,3,0,0,1-3-3v-30a3,3,0,0,1,3-3h42a3,3,0,0,1,3,3v30A3,3,0,0,1,574,4571Zm-15.485,3,6.326,6.32h0.008A6,6,0,0,0,569,4582v2a3,3,0,0,1-3,3H534.243l-8.122,8.12A3,3,0,0,1,524,4596h0c-0.013,0-.024-0.01-0.037-0.01a3,3,0,0,1-2.084-.87c-0.013-.01-0.021-0.03-0.033-0.04a2.99,2.99,0,0,1-.334-0.41,1.69,1.69,0,0,1-.1-0.18,3.64,3.64,0,0,1-.177-0.32c-0.023-.06-0.033-0.12-0.053-0.17a2.627,2.627,0,0,1-.183-1h0v-6h-4a3,3,0,0,1-3-3v-34h0a3,3,0,0,1,3-3h9v21a6,6,0,0,0,6,6h26.515Z" transform="translate(-514 -4535)"/>
+									</svg>
+									</i>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, reprehenderit!</p>
+									<span class="reviews-carousel__name">Jon Doe</span>
+								</div>
+								<div class="reviews-carousel__item">
+									<i class="reviews-carousel__icon">
+										<svg xmlns="http://www.w3.org/2000/svg" width="63" height="61" viewBox="0 0 63 61">
+											<defs>
+												<style>
+												.cls-1 {
+													fill: #95e1d3;
+													fill-rule: evenodd;
+												}
+											</style>
+										</defs>
+										<path id="SPEECH_4" data-name="SPEECH 4" class="cls-1" d="M574,4571h-2v5h0a2.979,2.979,0,0,1-.061.6,2.9,2.9,0,0,1-.122.4c-0.02.05-.03,0.11-0.053,0.17a2.746,2.746,0,0,1-.176.32c-0.035.06-.061,0.13-0.1,0.19a3.65,3.65,0,0,1-.334.4c-0.012.01-.02,0.03-0.033,0.04a3,3,0,0,1-2.084.87c-0.012,0-.024.01-0.037,0.01h0a3,3,0,0,1-2.121-.88l-7.122-7.12H532a3,3,0,0,1-3-3v-30a3,3,0,0,1,3-3h42a3,3,0,0,1,3,3v30A3,3,0,0,1,574,4571Zm-15.485,3,6.326,6.32h0.008A6,6,0,0,0,569,4582v2a3,3,0,0,1-3,3H534.243l-8.122,8.12A3,3,0,0,1,524,4596h0c-0.013,0-.024-0.01-0.037-0.01a3,3,0,0,1-2.084-.87c-0.013-.01-0.021-0.03-0.033-0.04a2.99,2.99,0,0,1-.334-0.41,1.69,1.69,0,0,1-.1-0.18,3.64,3.64,0,0,1-.177-0.32c-0.023-.06-0.033-0.12-0.053-0.17a2.627,2.627,0,0,1-.183-1h0v-6h-4a3,3,0,0,1-3-3v-34h0a3,3,0,0,1,3-3h9v21a6,6,0,0,0,6,6h26.515Z" transform="translate(-514 -4535)"/>
+									</svg>
+									</i>
+									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, reprehenderit!</p>
+									<span class="reviews-carousel__name">Jon Doe</span>
+								</div>
+							</div>
+						</div>
+					</section>
+
+					<section class="section team">
+						<div class="container">
+							<sup class="sup">Who we are</sup>
+							<h2 class="h2">MEET OUR TEAM</h2>
+							<div class="section-line"></div>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, aperiam.</p>
+							<div class="team-inner">
+								<div class="team-inner__item wow bounceInLeft" data-wow-duration=".8s">
+									<img src="img/Matthew.jpg" alt="img">
+									<span class="team-inner__name">MATHEW DIX</span>
+									<span class="team-inner__work">Graphic Design</span>
+									<div class="team-inner__social">
+										<a href="#">
+											<svg xmlns="http://www.w3.org/2000/svg" width="12.031" height="25.62" viewBox="0 0 12.031 25.62">
+												<defs>
+													<style>
+													.cls-1 {
+														fill: #fff;
+														fill-rule: evenodd;
+													}
+												</style>
+											</defs>
+											<path id="facebook" fill=#f38181 d="M463.089,5312.2v4.12s-3.037-.3-3.8.86c-0.416.64-.169,2.5-0.206,3.84h4.029c-0.34,1.56-.584,2.62-0.835,3.98h-3.216v12.8h-5.582c0-3.95,0-8.55,0-12.75h-2.375v-4.03h2.349c0.12-2.95.165-5.87,1.629-7.35C456.728,5312,458.3,5312.2,463.089,5312.2Z" transform="translate(-451.094 -5312.19)"/>
+										</svg>
+									</a>
+									<a href="#">
+										<svg xmlns="http://www.w3.org/2000/svg" width="25.594" height="20.79" viewBox="0 0 25.594 20.79">
+											<defs>
+												<style>
+												.cls-1 {
+													fill: #f38181;
+													fill-rule: evenodd;
+												}
+											</style>
+										</defs>
+										<path id="twitter" fill=#f38181 d="M516.513,5314.6a5.393,5.393,0,0,1,4.151,1.65,8.665,8.665,0,0,0,2.691-.91l0.653-.36a5.272,5.272,0,0,1-1.7,2.47,2.512,2.512,0,0,1-.577.41v0.01a9.769,9.769,0,0,0,2.973-.8v0.01a8.535,8.535,0,0,1-1.781,2.04c-0.273.22-.547,0.44-0.82,0.65a15.155,15.155,0,0,1-.243,3.38c-1.312,5.89-4.788,9.89-10.289,11.61a15.83,15.83,0,0,1-7.432.31,19.915,19.915,0,0,1-3.087-1.01,11.506,11.506,0,0,1-1.487-.77c-0.154-.09-0.307-0.19-0.461-0.28a9.219,9.219,0,0,0,1.678.06c0.517-.08,1.023-0.06,1.5-0.16a10.77,10.77,0,0,0,3.151-1.14,5.97,5.97,0,0,0,1.423-.93,4.58,4.58,0,0,1-1.563-.28,5.294,5.294,0,0,1-3.332-3.36,5.194,5.194,0,0,0,2.345-.11,3.767,3.767,0,0,1-1.717-.69,5.032,5.032,0,0,1-2.473-4.49c0.18,0.08.359,0.17,0.538,0.25a5.152,5.152,0,0,0,1.1.31,1.444,1.444,0,0,0,.718.06h-0.026c-0.264-.3-0.695-0.51-0.961-0.84a5.365,5.365,0,0,1-1.179-4.76,6,6,0,0,1,.564-1.37c0.009,0,.017.01,0.026,0.01a3.044,3.044,0,0,0,.474.55,9.443,9.443,0,0,0,1.563,1.5,15.43,15.43,0,0,0,6.419,3.1,10.137,10.137,0,0,0,2.358.31,4.908,4.908,0,0,1,.025-2.47,5.165,5.165,0,0,1,2.973-3.52,5.9,5.9,0,0,1,1.166-.36C516.086,5314.65,516.3,5314.63,516.513,5314.6Z" transform="translate(-499.094 -5314.59)"/>
+									</svg>
+								</a>
+								<a href="#">
+									<svg xmlns="http://www.w3.org/2000/svg" width="19.594" height="25.62" viewBox="0 0 19.594 25.62">
+										<defs>
+											<style>
+											.cls-1 {
+												fill: #f38181;
+												fill-rule: evenodd;
+											}
+										</style>
+									</defs>
+									<path id="pinterest" fill=#f38181 d="M566.051,5328.85c-0.209.84-.42,1.71-0.638,2.56a18.96,18.96,0,0,1-.718,2.47,12.691,12.691,0,0,1-2.043,3.53c-0.575.66-.453,0.4-0.626,0.36-0.132-.03-0.143-0.16-0.169-0.34a19.314,19.314,0,0,1,.007-3.34,17.909,17.909,0,0,1,.589-3.47c0.484-2.07.946-4.09,1.435-6.17a1.422,1.422,0,0,0,.09-0.44,6.471,6.471,0,0,1-.429-1.7,5.448,5.448,0,0,1,.139-1.95,3.224,3.224,0,0,1,1.894-2.34,2.206,2.206,0,0,1,1.735.14,1.851,1.851,0,0,1,.867,1.24,4.463,4.463,0,0,1-.08,1.89c-0.267,1.22-.618,2.14-0.937,3.31a3.648,3.648,0,0,0-.189,1.81,2.119,2.119,0,0,0,.847,1.28,2.493,2.493,0,0,0,1.625.46,3.572,3.572,0,0,0,2.651-1.57,9.309,9.309,0,0,0,1.675-4.69,11.565,11.565,0,0,0,.07-2.01,5.473,5.473,0,0,0-1.127-3.12,5.282,5.282,0,0,0-2.512-1.71,8.285,8.285,0,0,0-3.747-.23,6.613,6.613,0,0,0-4.915,3.53,7.085,7.085,0,0,0-.837,3.41,4.438,4.438,0,0,0,.678,2.5c0.133,0.2.328,0.37,0.458,0.6a1.718,1.718,0,0,1-.119,1.16c-0.11.43-.122,1.01-0.618,1.02a1.377,1.377,0,0,1-.638-0.24,5.108,5.108,0,0,1-2.422-3.74,8.878,8.878,0,0,1,0-3.23,9.244,9.244,0,0,1,4.4-6.15,10.4,10.4,0,0,1,3.907-1.34,13.322,13.322,0,0,1,1.605-.13,9.627,9.627,0,0,1,4.326.8,8.862,8.862,0,0,1,2.98,2.15,8.14,8.14,0,0,1,1.834,3.31,7.922,7.922,0,0,1,.4,2.29,13.861,13.861,0,0,1-.308,2.37,9.315,9.315,0,0,1-3.838,6.45,6.924,6.924,0,0,1-4,1.1,4.642,4.642,0,0,1-1.983-.58A3.306,3.306,0,0,1,566.051,5328.85Z" transform="translate(-557.906 -5312.22)"/>
+								</svg>
+							</a>
+							<a href="#">
+								<svg xmlns="http://www.w3.org/2000/svg" width="25.593" height="25.62" viewBox="0 0 25.593 25.62">
+									<defs>
+										<style>
+										.cls-1 {
+											fill: #f38181;
+											fill-rule: evenodd;
+										}
+									</style>
+								</defs>
+								<path id="instagram" fill=#f38181 d="M632.7,5337.8H613.5a3.2,3.2,0,0,1-3.2-3.2v-19.2a3.2,3.2,0,0,1,3.2-3.2h19.2a3.2,3.2,0,0,1,3.2,3.2v19.2A3.2,3.2,0,0,1,632.7,5337.8Zm-9.6-17.76a4.954,4.954,0,0,0-4.5,2.88h0a0.244,0.244,0,0,1-.022.05c-0.047.11-.088,0.22-0.128,0.33-0.019.05-.04,0.1-0.057,0.15-0.037.11-.067,0.23-0.1,0.34-0.014.05-.03,0.11-0.042,0.16-0.026.12-.044,0.25-0.061,0.37-0.007.05-.017,0.1-0.023,0.15a5.074,5.074,0,0,0-.029.53,4.96,4.96,0,1,0,9.92,0,5.074,5.074,0,0,0-.029-0.53c-0.006-.05-0.016-0.1-0.023-0.15-0.017-.12-0.035-0.25-0.061-0.37-0.012-.05-0.028-0.11-0.042-0.16-0.028-.11-0.058-0.23-0.1-0.34-0.017-.05-0.038-0.1-0.057-0.15-0.04-.11-0.081-0.22-0.128-0.33a0.244,0.244,0,0,1-.022-0.05h0A4.954,4.954,0,0,0,623.1,5320.04Zm9.92-3.68a1.278,1.278,0,0,0-1.28-1.28h-2.56a1.278,1.278,0,0,0-1.28,1.28v2.56a1.278,1.278,0,0,0,1.28,1.28h2.56a1.278,1.278,0,0,0,1.28-1.28v-2.56Zm0,6.56h-2.36a7.84,7.84,0,1,1-15.12,0h-2.36v10.72a1.278,1.278,0,0,0,1.28,1.28h17.28a1.278,1.278,0,0,0,1.28-1.28v-10.72Z" transform="translate(-610.313 -5312.19)"/>
+							</svg>
+												</a>
+											</div>
+										</div>
+
+										<div class="team-inner__item wow zoomIn" data-wow-duration=".9s" data-wow-delay=".3s">
+											<img src="img/Cristopher.jpg" alt="img">
+											<span class="team-inner__name">CRISTOPHER CAMPBELL</span>
+											<span class="team-inner__work">Branding/UX design</span>
+											<div class="team-inner__social">
+												<a href="#">
+													<svg xmlns="http://www.w3.org/2000/svg" width="12.031" height="25.62" viewBox="0 0 12.031 25.62">
+														<defs>
+															<style>
+															.cls-1 {
+																fill: #fff;
+																fill-rule: evenodd;
+															}
+														</style>
+													</defs>
+													<path id="facebook" fill=#f38181 d="M463.089,5312.2v4.12s-3.037-.3-3.8.86c-0.416.64-.169,2.5-0.206,3.84h4.029c-0.34,1.56-.584,2.62-0.835,3.98h-3.216v12.8h-5.582c0-3.95,0-8.55,0-12.75h-2.375v-4.03h2.349c0.12-2.95.165-5.87,1.629-7.35C456.728,5312,458.3,5312.2,463.089,5312.2Z" transform="translate(-451.094 -5312.19)"/>
+													</svg>
+												</a>
+												<a href="#">
+													<svg xmlns="http://www.w3.org/2000/svg" width="25.594" height="20.79" viewBox="0 0 25.594 20.79">
+														<defs>
+															<style>
+																.cls-1 {
+																	fill: #f38181;
+																	fill-rule: evenodd;
+																}
+															</style>
+														</defs>
+														<path id="twitter" fill=#f38181 d="M516.513,5314.6a5.393,5.393,0,0,1,4.151,1.65,8.665,8.665,0,0,0,2.691-.91l0.653-.36a5.272,5.272,0,0,1-1.7,2.47,2.512,2.512,0,0,1-.577.41v0.01a9.769,9.769,0,0,0,2.973-.8v0.01a8.535,8.535,0,0,1-1.781,2.04c-0.273.22-.547,0.44-0.82,0.65a15.155,15.155,0,0,1-.243,3.38c-1.312,5.89-4.788,9.89-10.289,11.61a15.83,15.83,0,0,1-7.432.31,19.915,19.915,0,0,1-3.087-1.01,11.506,11.506,0,0,1-1.487-.77c-0.154-.09-0.307-0.19-0.461-0.28a9.219,9.219,0,0,0,1.678.06c0.517-.08,1.023-0.06,1.5-0.16a10.77,10.77,0,0,0,3.151-1.14,5.97,5.97,0,0,0,1.423-.93,4.58,4.58,0,0,1-1.563-.28,5.294,5.294,0,0,1-3.332-3.36,5.194,5.194,0,0,0,2.345-.11,3.767,3.767,0,0,1-1.717-.69,5.032,5.032,0,0,1-2.473-4.49c0.18,0.08.359,0.17,0.538,0.25a5.152,5.152,0,0,0,1.1.31,1.444,1.444,0,0,0,.718.06h-0.026c-0.264-.3-0.695-0.51-0.961-0.84a5.365,5.365,0,0,1-1.179-4.76,6,6,0,0,1,.564-1.37c0.009,0,.017.01,0.026,0.01a3.044,3.044,0,0,0,.474.55,9.443,9.443,0,0,0,1.563,1.5,15.43,15.43,0,0,0,6.419,3.1,10.137,10.137,0,0,0,2.358.31,4.908,4.908,0,0,1,.025-2.47,5.165,5.165,0,0,1,2.973-3.52,5.9,5.9,0,0,1,1.166-.36C516.086,5314.65,516.3,5314.63,516.513,5314.6Z" transform="translate(-499.094 -5314.59)"/>
+													</svg>
+												</a>
+												<a href="#">
+													<svg xmlns="http://www.w3.org/2000/svg" width="19.594" height="25.62" viewBox="0 0 19.594 25.62">
+														<defs>
+															<style>
+															.cls-1 {
+																fill: #f38181;
+																fill-rule: evenodd;
+															}
+															</style>
+														</defs>
+														<path id="pinterest" fill=#f38181 d="M566.051,5328.85c-0.209.84-.42,1.71-0.638,2.56a18.96,18.96,0,0,1-.718,2.47,12.691,12.691,0,0,1-2.043,3.53c-0.575.66-.453,0.4-0.626,0.36-0.132-.03-0.143-0.16-0.169-0.34a19.314,19.314,0,0,1,.007-3.34,17.909,17.909,0,0,1,.589-3.47c0.484-2.07.946-4.09,1.435-6.17a1.422,1.422,0,0,0,.09-0.44,6.471,6.471,0,0,1-.429-1.7,5.448,5.448,0,0,1,.139-1.95,3.224,3.224,0,0,1,1.894-2.34,2.206,2.206,0,0,1,1.735.14,1.851,1.851,0,0,1,.867,1.24,4.463,4.463,0,0,1-.08,1.89c-0.267,1.22-.618,2.14-0.937,3.31a3.648,3.648,0,0,0-.189,1.81,2.119,2.119,0,0,0,.847,1.28,2.493,2.493,0,0,0,1.625.46,3.572,3.572,0,0,0,2.651-1.57,9.309,9.309,0,0,0,1.675-4.69,11.565,11.565,0,0,0,.07-2.01,5.473,5.473,0,0,0-1.127-3.12,5.282,5.282,0,0,0-2.512-1.71,8.285,8.285,0,0,0-3.747-.23,6.613,6.613,0,0,0-4.915,3.53,7.085,7.085,0,0,0-.837,3.41,4.438,4.438,0,0,0,.678,2.5c0.133,0.2.328,0.37,0.458,0.6a1.718,1.718,0,0,1-.119,1.16c-0.11.43-.122,1.01-0.618,1.02a1.377,1.377,0,0,1-.638-0.24,5.108,5.108,0,0,1-2.422-3.74,8.878,8.878,0,0,1,0-3.23,9.244,9.244,0,0,1,4.4-6.15,10.4,10.4,0,0,1,3.907-1.34,13.322,13.322,0,0,1,1.605-.13,9.627,9.627,0,0,1,4.326.8,8.862,8.862,0,0,1,2.98,2.15,8.14,8.14,0,0,1,1.834,3.31,7.922,7.922,0,0,1,.4,2.29,13.861,13.861,0,0,1-.308,2.37,9.315,9.315,0,0,1-3.838,6.45,6.924,6.924,0,0,1-4,1.1,4.642,4.642,0,0,1-1.983-.58A3.306,3.306,0,0,1,566.051,5328.85Z" transform="translate(-557.906 -5312.22)"/>
+													</svg>
+												</a>
+												<a href="#">
+													<svg xmlns="http://www.w3.org/2000/svg" width="25.593" height="25.62" viewBox="0 0 25.593 25.62">
+														<defs>
+															<style>
+																.cls-1 {
+																	fill: #f38181;
+																	fill-rule: evenodd;
+																	}
+															</style>
+														</defs>
+														<path id="instagram" fill=#f38181 d="M632.7,5337.8H613.5a3.2,3.2,0,0,1-3.2-3.2v-19.2a3.2,3.2,0,0,1,3.2-3.2h19.2a3.2,3.2,0,0,1,3.2,3.2v19.2A3.2,3.2,0,0,1,632.7,5337.8Zm-9.6-17.76a4.954,4.954,0,0,0-4.5,2.88h0a0.244,0.244,0,0,1-.022.05c-0.047.11-.088,0.22-0.128,0.33-0.019.05-.04,0.1-0.057,0.15-0.037.11-.067,0.23-0.1,0.34-0.014.05-.03,0.11-0.042,0.16-0.026.12-.044,0.25-0.061,0.37-0.007.05-.017,0.1-0.023,0.15a5.074,5.074,0,0,0-.029.53,4.96,4.96,0,1,0,9.92,0,5.074,5.074,0,0,0-.029-0.53c-0.006-.05-0.016-0.1-0.023-0.15-0.017-.12-0.035-0.25-0.061-0.37-0.012-.05-0.028-0.11-0.042-0.16-0.028-.11-0.058-0.23-0.1-0.34-0.017-.05-0.038-0.1-0.057-0.15-0.04-.11-0.081-0.22-0.128-0.33a0.244,0.244,0,0,1-.022-0.05h0A4.954,4.954,0,0,0,623.1,5320.04Zm9.92-3.68a1.278,1.278,0,0,0-1.28-1.28h-2.56a1.278,1.278,0,0,0-1.28,1.28v2.56a1.278,1.278,0,0,0,1.28,1.28h2.56a1.278,1.278,0,0,0,1.28-1.28v-2.56Zm0,6.56h-2.36a7.84,7.84,0,1,1-15.12,0h-2.36v10.72a1.278,1.278,0,0,0,1.28,1.28h17.28a1.278,1.278,0,0,0,1.28-1.28v-10.72Z" transform="translate(-610.313 -5312.19)"/>
+													</svg>
+												</a>
+											</div>
+										</div>
+
+								<div class="team-inner__item wow bounceInRight" data-wow-duration="1s">
+								<img src="img/Michael.jpg" alt="img">
+								<span class="team-inner__name">MICHAEL FERTIG</span>
+								<span class="team-inner__work">Developer</span>
+								<div class="team-inner__social">
+									<a href="#">
+										<svg xmlns="http://www.w3.org/2000/svg" width="12.031" height="25.62" viewBox="0 0 12.031 25.62">
+											<defs>
+												<style>
+												.cls-1 {
+							fill: #fff;
+							fill-rule: evenodd;
+												}
+											</style>
+										</defs>
+										<path id="facebook" fill=#f38181 d="M463.089,5312.2v4.12s-3.037-.3-3.8.86c-0.416.64-.169,2.5-0.206,3.84h4.029c-0.34,1.56-.584,2.62-0.835,3.98h-3.216v12.8h-5.582c0-3.95,0-8.55,0-12.75h-2.375v-4.03h2.349c0.12-2.95.165-5.87,1.629-7.35C456.728,5312,458.3,5312.2,463.089,5312.2Z" transform="translate(-451.094 -5312.19)"/>
+									</svg>
+								</a>
+								<a href="#">
+									<svg xmlns="http://www.w3.org/2000/svg" width="25.594" height="20.79" viewBox="0 0 25.594 20.79">
+										<defs>
+											<style>
+											.cls-1 {
+												fill: #f38181;
+												fill-rule: evenodd;
+											}
+										</style>
+									</defs>
+									<path id="twitter" fill=#f38181 d="M516.513,5314.6a5.393,5.393,0,0,1,4.151,1.65,8.665,8.665,0,0,0,2.691-.91l0.653-.36a5.272,5.272,0,0,1-1.7,2.47,2.512,2.512,0,0,1-.577.41v0.01a9.769,9.769,0,0,0,2.973-.8v0.01a8.535,8.535,0,0,1-1.781,2.04c-0.273.22-.547,0.44-0.82,0.65a15.155,15.155,0,0,1-.243,3.38c-1.312,5.89-4.788,9.89-10.289,11.61a15.83,15.83,0,0,1-7.432.31,19.915,19.915,0,0,1-3.087-1.01,11.506,11.506,0,0,1-1.487-.77c-0.154-.09-0.307-0.19-0.461-0.28a9.219,9.219,0,0,0,1.678.06c0.517-.08,1.023-0.06,1.5-0.16a10.77,10.77,0,0,0,3.151-1.14,5.97,5.97,0,0,0,1.423-.93,4.58,4.58,0,0,1-1.563-.28,5.294,5.294,0,0,1-3.332-3.36,5.194,5.194,0,0,0,2.345-.11,3.767,3.767,0,0,1-1.717-.69,5.032,5.032,0,0,1-2.473-4.49c0.18,0.08.359,0.17,0.538,0.25a5.152,5.152,0,0,0,1.1.31,1.444,1.444,0,0,0,.718.06h-0.026c-0.264-.3-0.695-0.51-0.961-0.84a5.365,5.365,0,0,1-1.179-4.76,6,6,0,0,1,.564-1.37c0.009,0,.017.01,0.026,0.01a3.044,3.044,0,0,0,.474.55,9.443,9.443,0,0,0,1.563,1.5,15.43,15.43,0,0,0,6.419,3.1,10.137,10.137,0,0,0,2.358.31,4.908,4.908,0,0,1,.025-2.47,5.165,5.165,0,0,1,2.973-3.52,5.9,5.9,0,0,1,1.166-.36C516.086,5314.65,516.3,5314.63,516.513,5314.6Z" transform="translate(-499.094 -5314.59)"/>
+								</svg>
+								</a>
+								<a href="#">
+								<svg xmlns="http://www.w3.org/2000/svg" width="19.594" height="25.62" viewBox="0 0 19.594 25.62">
+									<defs>
+										<style>
+										.cls-1 {
+											fill: #f38181;
+											fill-rule: evenodd;
+										}
+									</style>
+								</defs>
+								<path id="pinterest" fill=#f38181 d="M566.051,5328.85c-0.209.84-.42,1.71-0.638,2.56a18.96,18.96,0,0,1-.718,2.47,12.691,12.691,0,0,1-2.043,3.53c-0.575.66-.453,0.4-0.626,0.36-0.132-.03-0.143-0.16-0.169-0.34a19.314,19.314,0,0,1,.007-3.34,17.909,17.909,0,0,1,.589-3.47c0.484-2.07.946-4.09,1.435-6.17a1.422,1.422,0,0,0,.09-0.44,6.471,6.471,0,0,1-.429-1.7,5.448,5.448,0,0,1,.139-1.95,3.224,3.224,0,0,1,1.894-2.34,2.206,2.206,0,0,1,1.735.14,1.851,1.851,0,0,1,.867,1.24,4.463,4.463,0,0,1-.08,1.89c-0.267,1.22-.618,2.14-0.937,3.31a3.648,3.648,0,0,0-.189,1.81,2.119,2.119,0,0,0,.847,1.28,2.493,2.493,0,0,0,1.625.46,3.572,3.572,0,0,0,2.651-1.57,9.309,9.309,0,0,0,1.675-4.69,11.565,11.565,0,0,0,.07-2.01,5.473,5.473,0,0,0-1.127-3.12,5.282,5.282,0,0,0-2.512-1.71,8.285,8.285,0,0,0-3.747-.23,6.613,6.613,0,0,0-4.915,3.53,7.085,7.085,0,0,0-.837,3.41,4.438,4.438,0,0,0,.678,2.5c0.133,0.2.328,0.37,0.458,0.6a1.718,1.718,0,0,1-.119,1.16c-0.11.43-.122,1.01-0.618,1.02a1.377,1.377,0,0,1-.638-0.24,5.108,5.108,0,0,1-2.422-3.74,8.878,8.878,0,0,1,0-3.23,9.244,9.244,0,0,1,4.4-6.15,10.4,10.4,0,0,1,3.907-1.34,13.322,13.322,0,0,1,1.605-.13,9.627,9.627,0,0,1,4.326.8,8.862,8.862,0,0,1,2.98,2.15,8.14,8.14,0,0,1,1.834,3.31,7.922,7.922,0,0,1,.4,2.29,13.861,13.861,0,0,1-.308,2.37,9.315,9.315,0,0,1-3.838,6.45,6.924,6.924,0,0,1-4,1.1,4.642,4.642,0,0,1-1.983-.58A3.306,3.306,0,0,1,566.051,5328.85Z" transform="translate(-557.906 -5312.22)"/>
+								</svg>
+								</a>
+								<a href="#">
+								<svg xmlns="http://www.w3.org/2000/svg" width="25.593" height="25.62" viewBox="0 0 25.593 25.62">
+									<defs>
+										<style>
+										.cls-1 {
+											fill: #f38181;
+											fill-rule: evenodd;
+										}
+									</style>
+								</defs>
+								<path id="instagram" fill=#f38181 d="M632.7,5337.8H613.5a3.2,3.2,0,0,1-3.2-3.2v-19.2a3.2,3.2,0,0,1,3.2-3.2h19.2a3.2,3.2,0,0,1,3.2,3.2v19.2A3.2,3.2,0,0,1,632.7,5337.8Zm-9.6-17.76a4.954,4.954,0,0,0-4.5,2.88h0a0.244,0.244,0,0,1-.022.05c-0.047.11-.088,0.22-0.128,0.33-0.019.05-.04,0.1-0.057,0.15-0.037.11-.067,0.23-0.1,0.34-0.014.05-.03,0.11-0.042,0.16-0.026.12-.044,0.25-0.061,0.37-0.007.05-.017,0.1-0.023,0.15a5.074,5.074,0,0,0-.029.53,4.96,4.96,0,1,0,9.92,0,5.074,5.074,0,0,0-.029-0.53c-0.006-.05-0.016-0.1-0.023-0.15-0.017-.12-0.035-0.25-0.061-0.37-0.012-.05-0.028-0.11-0.042-0.16-0.028-.11-0.058-0.23-0.1-0.34-0.017-.05-0.038-0.1-0.057-0.15-0.04-.11-0.081-0.22-0.128-0.33a0.244,0.244,0,0,1-.022-0.05h0A4.954,4.954,0,0,0,623.1,5320.04Zm9.92-3.68a1.278,1.278,0,0,0-1.28-1.28h-2.56a1.278,1.278,0,0,0-1.28,1.28v2.56a1.278,1.278,0,0,0,1.28,1.28h2.56a1.278,1.278,0,0,0,1.28-1.28v-2.56Zm0,6.56h-2.36a7.84,7.84,0,1,1-15.12,0h-2.36v10.72a1.278,1.278,0,0,0,1.28,1.28h17.28a1.278,1.278,0,0,0,1.28-1.28v-10.72Z" transform="translate(-610.313 -5312.19)"/>
+								</svg>
+								</a>
+								</div>
+								</div>
+								</div>
+						</div>
+	</section>
+
+	<section class="section companies" data-slideout-ignore>
+		<div class="container container-flex">
+			<div class="companies-item"><img src="img/company-logo.png" alt="img"></div>
+			<div class="companies-item"><img src="img/company-logo.png" alt="img"></div>
+			<div class="companies-item"><img src="img/company-logo.png" alt="img"></div>
+			<div class="companies-item"><img src="img/company-logo.png" alt="img"></div>
+			<div class="companies-item"><img src="img/company-logo.png" alt="img"></div>
+			<div class="companies-item"><img src="img/company-logo.png" alt="img"></div>
+		</div>
+	</section>
+
+	<section id="work" class="section portfolio">
+		<div class="container">
+			<sup class="sup">What we do</sup>
+			<h2 class="h2">SOME OF OUR WORK</h2>
+			<div class="section-line"></div>
+		</div>
+		<div class="portfolio-block">
+			<div class="potfolio-block__item wow bounceInLeft" data-wow-durwtion=".5s" data-wow-delay=".3s">
+				<img src="img/human.jpg" alt="human">
+				<div class="potfolio-block__inner-item">
+					<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+						<defs>
+							<style>
+							.cls-2 {
+								fill: #fff;
+								fill-rule: evenodd;
+							}
+						</style>
+					</defs>
+					<path id="PICTURE" class="cls-2" d="M735,6994a1.5,1.5,0,0,1-1,1.41v1.68a1.5,1.5,0,1,1-1.908,1.91h-1.684a1.491,1.491,0,0,1-2.816,0h-1.684a1.491,1.491,0,0,1-2.816,0h-1.684a1.491,1.491,0,0,1-2.816,0h-1.684a1.491,1.491,0,0,1-2.816,0h-1.684a1.491,1.491,0,0,1-2.816,0h-1.684a1.5,1.5,0,1,1-1.908-1.91v-1.68a1.494,1.494,0,0,1,0-2.82v-1.68a1.494,1.494,0,0,1,0-2.82v-1.68a1.494,1.494,0,0,1,0-2.82v-1.68a1.494,1.494,0,0,1,0-2.82v-1.68a1.494,1.494,0,0,1,0-2.82v-1.68a1.5,1.5,0,1,1,1.908-1.91h1.684a1.491,1.491,0,0,1,2.816,0h1.684a1.491,1.491,0,0,1,2.816,0h1.684a1.491,1.491,0,0,1,2.816,0h1.684a1.491,1.491,0,0,1,2.816,0h1.684a1.491,1.491,0,0,1,2.816,0h1.684a1.5,1.5,0,1,1,1.908,1.91v1.68a1.494,1.494,0,0,1,0,2.82v1.68a1.494,1.494,0,0,1,0,2.82v1.68a1.494,1.494,0,0,1,0,2.82v1.68a1.494,1.494,0,0,1,0,2.82v1.68A1.5,1.5,0,0,1,735,6994Zm-4-20H709v22h22v-22Zm-13,16,7-8.5,4.5,7v6h-19l6-6Zm-3-7a3,3,0,1,1,3-3A3,3,0,0,1,715,6983Z" transform="translate(-705 -6970)"/>
+				</svg>
+					<span>CREATIVELY DESIGNED</span>
+					<span>Lorem ipsum dolor sit</span>
+				</div>
+			</div>
+			<div class="potfolio-block__item wow bounceInRight" data-wow-durwtion="1s" data-wow-delay=".3s">
+				<img src="img/beton.jpg" alt="beton">
+				<div class="potfolio-block__inner-item">
+					<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+						<defs>
+							<style>
+							.cls-2 {
+								fill: #fff;
+								fill-rule: evenodd;
+							}
+						</style>
+					</defs>
+					<path id="PICTURE" class="cls-2" d="M735,6994a1.5,1.5,0,0,1-1,1.41v1.68a1.5,1.5,0,1,1-1.908,1.91h-1.684a1.491,1.491,0,0,1-2.816,0h-1.684a1.491,1.491,0,0,1-2.816,0h-1.684a1.491,1.491,0,0,1-2.816,0h-1.684a1.491,1.491,0,0,1-2.816,0h-1.684a1.491,1.491,0,0,1-2.816,0h-1.684a1.5,1.5,0,1,1-1.908-1.91v-1.68a1.494,1.494,0,0,1,0-2.82v-1.68a1.494,1.494,0,0,1,0-2.82v-1.68a1.494,1.494,0,0,1,0-2.82v-1.68a1.494,1.494,0,0,1,0-2.82v-1.68a1.494,1.494,0,0,1,0-2.82v-1.68a1.5,1.5,0,1,1,1.908-1.91h1.684a1.491,1.491,0,0,1,2.816,0h1.684a1.491,1.491,0,0,1,2.816,0h1.684a1.491,1.491,0,0,1,2.816,0h1.684a1.491,1.491,0,0,1,2.816,0h1.684a1.491,1.491,0,0,1,2.816,0h1.684a1.5,1.5,0,1,1,1.908,1.91v1.68a1.494,1.494,0,0,1,0,2.82v1.68a1.494,1.494,0,0,1,0,2.82v1.68a1.494,1.494,0,0,1,0,2.82v1.68a1.494,1.494,0,0,1,0,2.82v1.68A1.5,1.5,0,0,1,735,6994Zm-4-20H709v22h22v-22Zm-13,16,7-8.5,4.5,7v6h-19l6-6Zm-3-7a3,3,0,1,1,3-3A3,3,0,0,1,715,6983Z" transform="translate(-705 -6970)"/>
+				</svg>
+					<span>CREATIVELY DESIGNED</span>
+					<span>Lorem ipsum dolor sit</span>
+				</div>
+			</div>
+			<div class="potfolio-block__item wow bounceInDown" data-wow-durwtion="1s" data-wow-delay="1s">
+				<img src="img/medusa.jpg" alt="medusa">
+				<div class="potfolio-block__inner-item">
+					<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+						<defs>
+							<style>
+							.cls-2 {
+								fill: #fff;
+								fill-rule: evenodd;
+							}
+						</style>
+					</defs>
+					<path id="PICTURE" class="cls-2" d="M735,6994a1.5,1.5,0,0,1-1,1.41v1.68a1.5,1.5,0,1,1-1.908,1.91h-1.684a1.491,1.491,0,0,1-2.816,0h-1.684a1.491,1.491,0,0,1-2.816,0h-1.684a1.491,1.491,0,0,1-2.816,0h-1.684a1.491,1.491,0,0,1-2.816,0h-1.684a1.491,1.491,0,0,1-2.816,0h-1.684a1.5,1.5,0,1,1-1.908-1.91v-1.68a1.494,1.494,0,0,1,0-2.82v-1.68a1.494,1.494,0,0,1,0-2.82v-1.68a1.494,1.494,0,0,1,0-2.82v-1.68a1.494,1.494,0,0,1,0-2.82v-1.68a1.494,1.494,0,0,1,0-2.82v-1.68a1.5,1.5,0,1,1,1.908-1.91h1.684a1.491,1.491,0,0,1,2.816,0h1.684a1.491,1.491,0,0,1,2.816,0h1.684a1.491,1.491,0,0,1,2.816,0h1.684a1.491,1.491,0,0,1,2.816,0h1.684a1.491,1.491,0,0,1,2.816,0h1.684a1.5,1.5,0,1,1,1.908,1.91v1.68a1.494,1.494,0,0,1,0,2.82v1.68a1.494,1.494,0,0,1,0,2.82v1.68a1.494,1.494,0,0,1,0,2.82v1.68a1.494,1.494,0,0,1,0,2.82v1.68A1.5,1.5,0,0,1,735,6994Zm-4-20H709v22h22v-22Zm-13,16,7-8.5,4.5,7v6h-19l6-6Zm-3-7a3,3,0,1,1,3-3A3,3,0,0,1,715,6983Z" transform="translate(-705 -6970)"/>
+				</svg>
+					<span>CREATIVELY DESIGNED</span>
+					<span>Lorem ipsum dolor sit</span>
+				</div>
+			</div>
+			<div class="potfolio-block__item wow bounceInRight" data-wow-durwtion="1s" data-wow-delay=".1s">
+				<img src="img/glass-ceiling.jpg" alt="glass-celing">
+				<div class="potfolio-block__inner-item">
+					<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+						<defs>
+							<style>
+							.cls-2 {
+								fill: #fff;
+								fill-rule: evenodd;
+							}
+						</style>
+					</defs>
+					<path id="PICTURE" class="cls-2" d="M735,6994a1.5,1.5,0,0,1-1,1.41v1.68a1.5,1.5,0,1,1-1.908,1.91h-1.684a1.491,1.491,0,0,1-2.816,0h-1.684a1.491,1.491,0,0,1-2.816,0h-1.684a1.491,1.491,0,0,1-2.816,0h-1.684a1.491,1.491,0,0,1-2.816,0h-1.684a1.491,1.491,0,0,1-2.816,0h-1.684a1.5,1.5,0,1,1-1.908-1.91v-1.68a1.494,1.494,0,0,1,0-2.82v-1.68a1.494,1.494,0,0,1,0-2.82v-1.68a1.494,1.494,0,0,1,0-2.82v-1.68a1.494,1.494,0,0,1,0-2.82v-1.68a1.494,1.494,0,0,1,0-2.82v-1.68a1.5,1.5,0,1,1,1.908-1.91h1.684a1.491,1.491,0,0,1,2.816,0h1.684a1.491,1.491,0,0,1,2.816,0h1.684a1.491,1.491,0,0,1,2.816,0h1.684a1.491,1.491,0,0,1,2.816,0h1.684a1.491,1.491,0,0,1,2.816,0h1.684a1.5,1.5,0,1,1,1.908,1.91v1.68a1.494,1.494,0,0,1,0,2.82v1.68a1.494,1.494,0,0,1,0,2.82v1.68a1.494,1.494,0,0,1,0,2.82v1.68a1.494,1.494,0,0,1,0,2.82v1.68A1.5,1.5,0,0,1,735,6994Zm-4-20H709v22h22v-22Zm-13,16,7-8.5,4.5,7v6h-19l6-6Zm-3-7a3,3,0,1,1,3-3A3,3,0,0,1,715,6983Z" transform="translate(-705 -6970)"/>
+				</svg>
+					<span>CREATIVELY DESIGNED</span>
+					<span>Lorem ipsum dolor sit</span>
+				</div>
+			</div>
+			<div class="potfolio-block__item wow bounceInLeft" data-wow-durwtion=".4s" data-wow-delay=".1s">
+				<img src="img/bridge.jpg" alt="bridge">
+				<div class="potfolio-block__inner-item">
+					<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+						<defs>
+							<style>
+							.cls-2 {
+								fill: #fff;
+								fill-rule: evenodd;
+							}
+						</style>
+					</defs>
+					<path id="PICTURE" class="cls-2" d="M735,6994a1.5,1.5,0,0,1-1,1.41v1.68a1.5,1.5,0,1,1-1.908,1.91h-1.684a1.491,1.491,0,0,1-2.816,0h-1.684a1.491,1.491,0,0,1-2.816,0h-1.684a1.491,1.491,0,0,1-2.816,0h-1.684a1.491,1.491,0,0,1-2.816,0h-1.684a1.491,1.491,0,0,1-2.816,0h-1.684a1.5,1.5,0,1,1-1.908-1.91v-1.68a1.494,1.494,0,0,1,0-2.82v-1.68a1.494,1.494,0,0,1,0-2.82v-1.68a1.494,1.494,0,0,1,0-2.82v-1.68a1.494,1.494,0,0,1,0-2.82v-1.68a1.494,1.494,0,0,1,0-2.82v-1.68a1.5,1.5,0,1,1,1.908-1.91h1.684a1.491,1.491,0,0,1,2.816,0h1.684a1.491,1.491,0,0,1,2.816,0h1.684a1.491,1.491,0,0,1,2.816,0h1.684a1.491,1.491,0,0,1,2.816,0h1.684a1.491,1.491,0,0,1,2.816,0h1.684a1.5,1.5,0,1,1,1.908,1.91v1.68a1.494,1.494,0,0,1,0,2.82v1.68a1.494,1.494,0,0,1,0,2.82v1.68a1.494,1.494,0,0,1,0,2.82v1.68a1.494,1.494,0,0,1,0,2.82v1.68A1.5,1.5,0,0,1,735,6994Zm-4-20H709v22h22v-22Zm-13,16,7-8.5,4.5,7v6h-19l6-6Zm-3-7a3,3,0,1,1,3-3A3,3,0,0,1,715,6983Z" transform="translate(-705 -6970)"/>
+				</svg>
+					<span>CREATIVELY DESIGNED</span>
+					<span>Lorem ipsum dolor sit</span>
+				</div>
+			</div>
+			<div class="potfolio-block__item wow bounceInRight" data-wow-durwtion="1s" data-wow-delay=".1s">
+				<img src="img/house.jpg" alt="house">
+				<div class="potfolio-block__inner-item">
+					<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+						<defs>
+							<style>
+							.cls-2 {
+								fill: #fff;
+								fill-rule: evenodd;
+							}
+						</style>
+					</defs>
+					<path id="PICTURE" class="cls-2" d="M735,6994a1.5,1.5,0,0,1-1,1.41v1.68a1.5,1.5,0,1,1-1.908,1.91h-1.684a1.491,1.491,0,0,1-2.816,0h-1.684a1.491,1.491,0,0,1-2.816,0h-1.684a1.491,1.491,0,0,1-2.816,0h-1.684a1.491,1.491,0,0,1-2.816,0h-1.684a1.491,1.491,0,0,1-2.816,0h-1.684a1.5,1.5,0,1,1-1.908-1.91v-1.68a1.494,1.494,0,0,1,0-2.82v-1.68a1.494,1.494,0,0,1,0-2.82v-1.68a1.494,1.494,0,0,1,0-2.82v-1.68a1.494,1.494,0,0,1,0-2.82v-1.68a1.494,1.494,0,0,1,0-2.82v-1.68a1.5,1.5,0,1,1,1.908-1.91h1.684a1.491,1.491,0,0,1,2.816,0h1.684a1.491,1.491,0,0,1,2.816,0h1.684a1.491,1.491,0,0,1,2.816,0h1.684a1.491,1.491,0,0,1,2.816,0h1.684a1.491,1.491,0,0,1,2.816,0h1.684a1.5,1.5,0,1,1,1.908,1.91v1.68a1.494,1.494,0,0,1,0,2.82v1.68a1.494,1.494,0,0,1,0,2.82v1.68a1.494,1.494,0,0,1,0,2.82v1.68a1.494,1.494,0,0,1,0,2.82v1.68A1.5,1.5,0,0,1,735,6994Zm-4-20H709v22h22v-22Zm-13,16,7-8.5,4.5,7v6h-19l6-6Zm-3-7a3,3,0,1,1,3-3A3,3,0,0,1,715,6983Z" transform="translate(-705 -6970)"/>
+				</svg>
+					<span>CREATIVELY DESIGNED</span>
+					<span>Lorem ipsum dolor sit</span>
+				</div>
+			</div>
+			<div class="potfolio-block__item wow bounceInLeft" data-wow-durwtion=".7s" data-wow-delay=".2s">
+				<img src="img/high-building.jpg" alt="building">
+				<div class="potfolio-block__inner-item">
+					<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
+						<defs>
+							<style>
+							.cls-2 {
+								fill: #fff;
+								fill-rule: evenodd;
+							}
+						</style>
+					</defs>
+					<path id="PICTURE" class="cls-2" d="M735,6994a1.5,1.5,0,0,1-1,1.41v1.68a1.5,1.5,0,1,1-1.908,1.91h-1.684a1.491,1.491,0,0,1-2.816,0h-1.684a1.491,1.491,0,0,1-2.816,0h-1.684a1.491,1.491,0,0,1-2.816,0h-1.684a1.491,1.491,0,0,1-2.816,0h-1.684a1.491,1.491,0,0,1-2.816,0h-1.684a1.5,1.5,0,1,1-1.908-1.91v-1.68a1.494,1.494,0,0,1,0-2.82v-1.68a1.494,1.494,0,0,1,0-2.82v-1.68a1.494,1.494,0,0,1,0-2.82v-1.68a1.494,1.494,0,0,1,0-2.82v-1.68a1.494,1.494,0,0,1,0-2.82v-1.68a1.5,1.5,0,1,1,1.908-1.91h1.684a1.491,1.491,0,0,1,2.816,0h1.684a1.491,1.491,0,0,1,2.816,0h1.684a1.491,1.491,0,0,1,2.816,0h1.684a1.491,1.491,0,0,1,2.816,0h1.684a1.491,1.491,0,0,1,2.816,0h1.684a1.5,1.5,0,1,1,1.908,1.91v1.68a1.494,1.494,0,0,1,0,2.82v1.68a1.494,1.494,0,0,1,0,2.82v1.68a1.494,1.494,0,0,1,0,2.82v1.68a1.494,1.494,0,0,1,0,2.82v1.68A1.5,1.5,0,0,1,735,6994Zm-4-20H709v22h22v-22Zm-13,16,7-8.5,4.5,7v6h-19l6-6Zm-3-7a3,3,0,1,1,3-3A3,3,0,0,1,715,6983Z" transform="translate(-705 -6970)"/>
+				</svg>
+					<span>CREATIVELY DESIGNED</span>
+					<span>Lorem ipsum dolor sit</span>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section reviewsSecond">
+		<div class="container">
+			<div class="owl-carousel reviewsSecond-carousel" data-slideout-ignore>
+				<div class="reviewsSecond-carousel__item">
+					<div class="reviewsSecond-carousel__avatar">
+						<img src="img/avatar.png" alt="avatar">
+					</div>
+					<p class="reviewsSecond-carousel__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste velit atque perspiciatis sint, dolores alias.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste velit atque perspiciatis sint, dolores alias.</p>
+					<span class="reviews-carousel__name">Joshua Earle</span>
+				</div>
+
+				<div class="reviewsSecond-carousel__item">
+					<div class="reviewsSecond-carousel__avatar">
+						<img src="img/avatar.png" alt="avatar">
+					</div>
+					<p class="reviewsSecond-carousel__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste velit atque perspiciatis sint, dolores alias.</p>
+					<span class="reviews-carousel__name">Joshua Earle</span>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="section happyClient" style="background-image: linear-gradient(360deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 100%), url(img/happy-clients.jpg)">
+		<div class="container">
+			<sup class="sup">Happy Clients</sup>
+			<h2 class="h2">WHAT PEOPLE SAY</h2>
+			<div class="section-line"></div>
+
+			<div class="happyClient-block">
+				<div class="happyClient-block__item">
+					<div class="happyClient__content">
+						<span class="happyClient__name">MATTHEW DIX</span>
+						<span class="happyClient__vacancy">Graphic designer</span>
+						<div class="section-line"></div>
+						<p class="happyClient__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est illo dolorem illum molestias odit consectetur.</p>
+					</div>
+					<div class="happyClient__avatar">
+						<img src="img/Happy-client-1.png" alt="img">
+					</div>
+				</div>
+
+				<div class="happyClient-block__item">
+					<div class="happyClient__content">
+						<span class="happyClient__name">MATTHEW DIX</span>
+						<span class="happyClient__vacancy">Graphic designer</span>
+						<div class="section-line"></div>
+						<p class="happyClient__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est illo dolorem illum molestias odit consectetur.</p>
+					</div>
+					<div class="happyClient__avatar">
+						<img src="img/Happy-client-2.png" alt="img">
+					</div>
+				</div>
+
+				<div class="happyClient-block__item">
+					<div class="happyClient__content">
+						<span class="happyClient__name">MATTHEW DIX</span>
+						<span class="happyClient__vacancy">Graphic designer</span>
+						<div class="section-line"></div>
+						<p class="happyClient__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est illo dolorem illum molestias odit consectetur.</p>
+					</div>
+					<div class="happyClient__avatar">
+						<img src="img/Happy-client-3.png" alt="img">
+					</div>
+				</div>
+
+				<div class="happyClient-block__item">
+					<div class="happyClient__content">
+						<span class="happyClient__name">MATTHEW DIX</span>
+						<span class="happyClient__vacancy">Graphic designer</span>
+						<div class="section-line"></div>
+						<p class="happyClient__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est illo dolorem illum molestias odit consectetur.</p>
+					</div>
+					<div class="happyClient__avatar">
+						<img src="img/Happy-client-4.png" alt="img">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="blog" class="section ourStories">
+		<div class="container">
+			<sup class="sup">Our stories</sup>
+			<h2 class="h2">LATEST BLOG</h2>
+			<div class="section-line"></div>
+			<div class="ourStories-block">
+				<div class="ourStories-block__item">
+					<div class="ourStories-block__image">
+						<img src="img/OurStories-1.jpg" alt="img">
+						<div class="ourStories-block__number">
+							<p>15</p>
+							<p>Jan</p>
+						</div>
+					</div>
+					<h3 class="h3">SED DO EIUSMOD TEMPOR</h3>
+					<p class="ourStories-block__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis debitis quia et, adipisci laudantium iure.</p>
+					<span  class="noMargin">
+						<i>
+							<svg xmlns="http://www.w3.org/2000/svg" width="19.438" height="11.25" viewBox="0 0 19.438 11.25">
+								<defs>
+									<style>
+									.cls-3 {
+										fill: #95e1d3;
+										fill-rule: evenodd;
+									}
+								</style>
+							</defs>
+							<path id="VIEW" class="cls-3" d="M379.71,9115.78a0.117,0.117,0,0,0,0,.02v0.01c0,0.01,0,.01,0,0.02s0,0.01,0,.02h0a0.734,0.734,0,0,1-.2.41c-0.2.25-.427,0.48-0.651,0.71a16.685,16.685,0,0,1-4.123,3.12,11.065,11.065,0,0,1-3.09,1.12,9.027,9.027,0,0,1-3.55-.05,13.554,13.554,0,0,1-5.5-2.86,15.053,15.053,0,0,1-2.108-2.04,0.778,0.778,0,0,1,0-1.05c0.2-.24.426-0.47,0.651-0.7a16.648,16.648,0,0,1,4.123-3.12,11.048,11.048,0,0,1,3.089-1.12,8.843,8.843,0,0,1,3.55.05,13.433,13.433,0,0,1,5.5,2.86,14.981,14.981,0,0,1,2.108,2.03,0.8,0.8,0,0,1,.2.41c0,0.01,0,.01,0,0.01a0.059,0.059,0,0,1,0,.02s0,0.01,0,.01a0.134,0.134,0,0,0,0,.02c0,0.01,0,.01,0,0.02s0,0.03,0,.04S379.71,9115.76,379.71,9115.78Zm-9.72-3.84a3.645,3.645,0,1,0,3.646,3.65A3.645,3.645,0,0,0,369.99,9111.94Zm0,5.47a1.825,1.825,0,1,1,1.823-1.82A1.824,1.824,0,0,1,369.99,9117.41Z" transform="translate(-360.281 -9110.13)"/>
+						</svg>
+					</i>
+					542
+				</span>
+				<span>
+					<i>
+						<svg xmlns="http://www.w3.org/2000/svg" width="16.031" height="14.25" viewBox="0 0 16.031 14.25">
+							<defs>
+								<style>
+								.cls-3 {
+									fill: #95e1d3;
+									fill-rule: evenodd;
+								}
+							</style>
+						</defs>
+						<path id="SPEECH_BUBBLE_2" data-name="SPEECH BUBBLE 2" class="cls-3" d="M437.416,9121.36a11.451,11.451,0,0,1-1.676-.25,6.352,6.352,0,0,1-5.647,2.23c2.441-1.15,2.391-3.07,1.957-3.32a5.615,5.615,0,0,1-3.068-4.76c0-3.4,3.727-6.14,8.434-6.14s7.577,2.74,7.577,6.14S442.124,9121.36,437.416,9121.36Zm-4.174-7.48a1.5,1.5,0,1,0,1.5,1.49A1.5,1.5,0,0,0,433.242,9113.88Zm3.75,0a1.5,1.5,0,1,0,1.5,1.49A1.5,1.5,0,0,0,436.992,9113.88Zm3.75,0a1.5,1.5,0,1,0,1.5,1.49A1.5,1.5,0,0,0,440.742,9113.88Z" transform="translate(-428.969 -9109.13)"/>
+					</svg>
+				</i>
+				17
+			</span>
+		</div>
+
+		<div class="ourStories-block__item">
+			<div class="ourStories-block__image">
+				<img src="img/OurStories-2.jpg" alt="img">
+				<div class="ourStories-block__number">
+					<p>14</p>
+					<p>Jan</p>
+				</div>
+			</div>
+			<h3 class="h3">SED DO EIUSMOD TEMPOR</h3>
+			<p class="ourStories-block__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis debitis quia et, adipisci laudantium iure.</p>
+			<span  class="noMargin">
+				<i>
+					<svg xmlns="http://www.w3.org/2000/svg" width="19.438" height="11.25" viewBox="0 0 19.438 11.25">
+						<defs>
+							<style>
+							.cls-3 {
+								fill: #95e1d3;
+								fill-rule: evenodd;
+							}
+						</style>
+					</defs>
+					<path id="VIEW" class="cls-3" d="M379.71,9115.78a0.117,0.117,0,0,0,0,.02v0.01c0,0.01,0,.01,0,0.02s0,0.01,0,.02h0a0.734,0.734,0,0,1-.2.41c-0.2.25-.427,0.48-0.651,0.71a16.685,16.685,0,0,1-4.123,3.12,11.065,11.065,0,0,1-3.09,1.12,9.027,9.027,0,0,1-3.55-.05,13.554,13.554,0,0,1-5.5-2.86,15.053,15.053,0,0,1-2.108-2.04,0.778,0.778,0,0,1,0-1.05c0.2-.24.426-0.47,0.651-0.7a16.648,16.648,0,0,1,4.123-3.12,11.048,11.048,0,0,1,3.089-1.12,8.843,8.843,0,0,1,3.55.05,13.433,13.433,0,0,1,5.5,2.86,14.981,14.981,0,0,1,2.108,2.03,0.8,0.8,0,0,1,.2.41c0,0.01,0,.01,0,0.01a0.059,0.059,0,0,1,0,.02s0,0.01,0,.01a0.134,0.134,0,0,0,0,.02c0,0.01,0,.01,0,0.02s0,0.03,0,.04S379.71,9115.76,379.71,9115.78Zm-9.72-3.84a3.645,3.645,0,1,0,3.646,3.65A3.645,3.645,0,0,0,369.99,9111.94Zm0,5.47a1.825,1.825,0,1,1,1.823-1.82A1.824,1.824,0,0,1,369.99,9117.41Z" transform="translate(-360.281 -9110.13)"/>
+				</svg>
+			</i>
+			542
+		</span>
+		<span>
+			<i>
+				<svg xmlns="http://www.w3.org/2000/svg" width="16.031" height="14.25" viewBox="0 0 16.031 14.25">
+					<defs>
+						<style>
+						.cls-3 {
+							fill: #95e1d3;
+							fill-rule: evenodd;
+						}
+					</style>
+				</defs>
+				<path id="SPEECH_BUBBLE_2" data-name="SPEECH BUBBLE 2" class="cls-3" d="M437.416,9121.36a11.451,11.451,0,0,1-1.676-.25,6.352,6.352,0,0,1-5.647,2.23c2.441-1.15,2.391-3.07,1.957-3.32a5.615,5.615,0,0,1-3.068-4.76c0-3.4,3.727-6.14,8.434-6.14s7.577,2.74,7.577,6.14S442.124,9121.36,437.416,9121.36Zm-4.174-7.48a1.5,1.5,0,1,0,1.5,1.49A1.5,1.5,0,0,0,433.242,9113.88Zm3.75,0a1.5,1.5,0,1,0,1.5,1.49A1.5,1.5,0,0,0,436.992,9113.88Zm3.75,0a1.5,1.5,0,1,0,1.5,1.49A1.5,1.5,0,0,0,440.742,9113.88Z" transform="translate(-428.969 -9109.13)"/>
+			</svg>
+		</i>
+		17
+	</span>
+</div>
+
+<div class="ourStories-block__item">
+	<div class="ourStories-block__image">
+		<img src="img/OurStories-3.jpg" alt="img">
+		<div class="ourStories-block__number">
+			<p>12</p>
+			<p>Jan</p>
+		</div>
+	</div>
+	<h3 class="h3">SED DO EIUSMOD TEMPOR</h3>
+	<p class="ourStories-block__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis debitis quia et, adipisci laudantium iure.</p>
+	<span  class="noMargin">
+		<i>
+			<svg xmlns="http://www.w3.org/2000/svg" width="19.438" height="11.25" viewBox="0 0 19.438 11.25">
+				<defs>
+					<style>
+					.cls-3 {
+						fill: #95e1d3;
+						fill-rule: evenodd;
+					}
+				</style>
+			</defs>
+			<path id="VIEW" class="cls-3" d="M379.71,9115.78a0.117,0.117,0,0,0,0,.02v0.01c0,0.01,0,.01,0,0.02s0,0.01,0,.02h0a0.734,0.734,0,0,1-.2.41c-0.2.25-.427,0.48-0.651,0.71a16.685,16.685,0,0,1-4.123,3.12,11.065,11.065,0,0,1-3.09,1.12,9.027,9.027,0,0,1-3.55-.05,13.554,13.554,0,0,1-5.5-2.86,15.053,15.053,0,0,1-2.108-2.04,0.778,0.778,0,0,1,0-1.05c0.2-.24.426-0.47,0.651-0.7a16.648,16.648,0,0,1,4.123-3.12,11.048,11.048,0,0,1,3.089-1.12,8.843,8.843,0,0,1,3.55.05,13.433,13.433,0,0,1,5.5,2.86,14.981,14.981,0,0,1,2.108,2.03,0.8,0.8,0,0,1,.2.41c0,0.01,0,.01,0,0.01a0.059,0.059,0,0,1,0,.02s0,0.01,0,.01a0.134,0.134,0,0,0,0,.02c0,0.01,0,.01,0,0.02s0,0.03,0,.04S379.71,9115.76,379.71,9115.78Zm-9.72-3.84a3.645,3.645,0,1,0,3.646,3.65A3.645,3.645,0,0,0,369.99,9111.94Zm0,5.47a1.825,1.825,0,1,1,1.823-1.82A1.824,1.824,0,0,1,369.99,9117.41Z" transform="translate(-360.281 -9110.13)"/>
+		</svg>
+	</i>
+	542
+</span>
+<span>
+	<i>
+		<svg xmlns="http://www.w3.org/2000/svg" width="16.031" height="14.25" viewBox="0 0 16.031 14.25">
+			<defs>
+				<style>
+				.cls-3 {
+					fill: #95e1d3;
+					fill-rule: evenodd;
+				}
+			</style>
+		</defs>
+		<path id="SPEECH_BUBBLE_2" data-name="SPEECH BUBBLE 2" class="cls-3" d="M437.416,9121.36a11.451,11.451,0,0,1-1.676-.25,6.352,6.352,0,0,1-5.647,2.23c2.441-1.15,2.391-3.07,1.957-3.32a5.615,5.615,0,0,1-3.068-4.76c0-3.4,3.727-6.14,8.434-6.14s7.577,2.74,7.577,6.14S442.124,9121.36,437.416,9121.36Zm-4.174-7.48a1.5,1.5,0,1,0,1.5,1.49A1.5,1.5,0,0,0,433.242,9113.88Zm3.75,0a1.5,1.5,0,1,0,1.5,1.49A1.5,1.5,0,0,0,436.992,9113.88Zm3.75,0a1.5,1.5,0,1,0,1.5,1.49A1.5,1.5,0,0,0,440.742,9113.88Z" transform="translate(-428.969 -9109.13)"/>
+	</svg>
+</i>
+17
+</span>
+</div>
+
+</div>
+</section>
+
+<section id="contact" class="googleMap">
+	<div class="googleMap-container">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d153612.57148765278!2d-73.90637757590478!3d40.71674047070176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1suk!2sua!4v1511387018003" width="1920" height="800" frameborder="0" style="border:0" allowfullscreen></iframe>
+	</div>
+	<div class="googleMapMarker">
+		<svg xmlns="http://www.w3.org/2000/svg" class="hiddenEl" width="19.188" height="25.62" viewBox="0 0 19.188 25.62">
+			<defs>
+
+		</defs>
+		<path id="PIN_2" data-name="PIN 2" fill="#f38181" d="M960,9322.8s-9.6-10.7-9.6-16a9.6,9.6,0,0,1,19.2,0C969.6,9312.1,960,9322.8,960,9322.8Zm0-22.4a6.4,6.4,0,1,0,6.4,6.4A6.4,6.4,0,0,0,960,9300.4Zm0,9.6a3.2,3.2,0,1,1,3.2-3.2A3.2,3.2,0,0,1,960,9310Z" transform="translate(-950.406 -9297.19)"/>
+	</svg>
+		<p class="hiddenEl">OPEN MAP</p>
+		<div class="section-line hiddenEl"></div>
+	</div>
+</section>
+
+<footer class="mobile-footer">
+	<div class="container">
+		<div class="mobile-footer-mogo">
+			<div class="form-container">
+				<span>Follow Us:</span>
+				<a href="#"><img src="./img/icons/facebook-footer.svg" alt=""></a>
+				<a href="#"><img src="./img/icons/twitter-footer.svg" alt=""></a>
+				<a href="#"><img src="./img/icons/instagram-footer.svg" alt=""></a>
+				<div>
+					<form action="#">
+						<input type="email" required placeholder="Enter your email">
+						<button type="submit">Subscribe</button>
+					</form>
+				</div>
+			</div>
+		</div>	
+	</div>
+</footer>
+
+
+	<div class="feedBack-wrapper">
+		<button class="button-feedBack">Feedback</button>
+	</div>
+
+	<dialog class="dialog" data-slideout-ignore>
+
+		<div class="feedBackForm">
+			<h4 class="feedBackForm-header">Contact Us</h4>
+			<form action="#">
+				<label><input type="name" required placeholder="Name"></label>
+				<label><input type="email" required placeholder="Email"></label>
+				<label><input type="text" required placeholder="Subject"></label>
+				<div>
+					<textarea rows="6" placeholder="Massage"></textarea>
+				</div>
+				<button class="form-button" type="submit">Send Massage</button>
+				
+			</form>
+		</div>
+		<button class="closeModal">
+			
+			<svg version="1.1" id="Capa_1" x="0px" y="0px"
+				width="30px" height="30px" viewBox="0 0 612 612" style="enable-background:new 0 0 612 612;" xml:space="preserve">
+				<g>
+					<g>
+						<polygon fill="#555" points="424.032,443.7 443.7,424.032 325.667,306 443.7,187.967 424.032,168.3 306,286.333 187.967,168.3 168.3,187.967 
+						286.333,306 168.3,424.032 187.967,443.7 306,325.667" />
+					</g>
+			</svg>
+
+		</button>
+	</dialog>
+
+
+	<!-- <button class="to-top">To top</button> -->
+
+			<div class="page-overlay"></div>
+	</div>
+
+	<nav class="mobile-menu">
+		<ul class="mobile-menu-list">
+			<li class="mobile-menu-list__item"><a rel="m_PageScroll2id" href="#home">Home</a></li>
+			<li class="mobile-menu-list__item"><a rel="m_PageScroll2id" href="#about">About</a></li>
+			<li class="mobile-menu-list__item"><a rel="m_PageScroll2id" href="#services">Services</a></li>
+			<li class="mobile-menu-list__item"><a rel="m_PageScroll2id" href="#work">Work</a></li>
+			<li class="mobile-menu-list__item"><a rel="m_PageScroll2id" href="#blog">Blog</a></li>
+			<li class="mobile-menu-list__item"><a rel="m_PageScroll2id" href="#contact">Contact</a></li>
+		</ul>
+	</nav>
+
+<link rel="stylesheet" href="css/main.min.css">
+<script src="js/libs.min.js"></script>
+<script src="js/main.js"></script>
+	<script>
+
+		$(window).load(function(){
+			$(".preloader").delay(600).fadeOut("slow");
+		});
+
+	</script>
+</body>
+
+</html>
